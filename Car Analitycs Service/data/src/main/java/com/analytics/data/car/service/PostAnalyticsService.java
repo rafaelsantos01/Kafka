@@ -26,6 +26,7 @@ public class PostAnalyticsService {
     private CarModelPriceEntityRepository carPriceAnalyticsRepository;
 
     public void saveDataAnalytics(CarPostDTO carPostDTO) {
+
         saveBrandAnalytics(carPostDTO.getBrand());
         saveCarModelAnalytics(carPostDTO.getModel());
         saveCarModelPriceAnalytics(carPostDTO.getModel(),carPostDTO.getPrice());
